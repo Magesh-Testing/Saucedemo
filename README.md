@@ -7,71 +7,67 @@ The framework follows the <b>Page Object Model (POM)</b> design pattern and demo
 Web Application: <u>https://www.saucedemo.com/</u>
 <br/><br/>
 <h3>Table of Contents</h3>
-Tech Requirement
-Project Structure
-Pre-requisites
-Verify
-Install Dependencies
+Tech Requirement<br/>
+Project Structure<br/>
+Pre-requisites<br/>
+Verify<br/>
+Install Dependencies<br/>
 Project Description
 
 <h4>Tech Requirement</h4>
-&bull; <b>Programming Language:</b> Python
-&bull; <b>Automation Tool:</b> Selenium WebDriver
-&bull; <b>Test Framework:</b> Pytest
-&bull; <b>Design Patten:</b> Page Object Model (POM)
-&bull; <b>Reporting:</b> Allure Report
-&bull; <b>Browser:</b> Firefox
-&bull; <b>IDE:</b> PyCharm
-<br/><br/>
+&bull; <b>Programming Language:</b> Python<br/>
+&bull; <b>Automation Tool:</b> Selenium WebDriver<br/>
+&bull; <b>Test Framework:</b> Pytest<br/>
+&bull; <b>Design Patten:</b> Page Object Model (POM)<br/>
+&bull; <b>Reporting:</b> Allure Report<br/>
+&bull; <b>Browser:</b> Firefox<br/>
+&bull; <b>IDE:</b> PyCharm<br/>
+<br/>
 <h4>Project Structure</h4>
-```
-Saucedemo/
-│
-├── pages/ 			# Page Object classes
-│ ├── login_page.py
-│ ├── products_page.py
-│ └── cart_page.py
-│
-├── tests/ 			# Test cases
-│ └── test_saucedemo.py
-│
-├── utils/ 			# Utility files (Excel reader)
-│ ├── __init__.py
-│ └── excel_reader.py
-│
-├── screenshots/ 		# Screenshots captured during execution
-├── allure-results/ 		# Allure raw results
-├── logs/ 			# Execution logs
-│
-├── conftest.py 		# Pytest fixtures & hooks
-├── config.ini 			# Application & environment configuration
-├── readme.ini 			# Framework reference configuration
-├── README.md 			# Project documentation
-└── requirements.txt 		# Project dependencies
-```
+
+Saucedemo/<br/>
+│<br/>
+├── pages/ 			              # Page Object classes<br/>
+│ ├── login_page.py<br/>
+│ ├── products_page.py<br/>
+│ └── cart_page.py<br/>
+│<br/>
+├── tests/ 			              # Test cases<br/>
+│ └── test_saucedemo.py<br/>
+│<br/>
+├── utils/ 			              # Utility files (Excel reader)<br/>
+│ ├── __init__.py<br/>
+│ └── excel_reader.py<br/>
+│<br/>
+├── screenshots/ 		          # Screenshots captured during execution<br/>
+├── allure-results/ 		      # Allure raw results<br/>
+├── logs/ 			              # Execution logs<br/>
+│<br/>
+├── conftest.py 		          # Pytest fixtures & hooks<br/>
+├── config.ini 			          # Application & environment configuration<br/>
+├── readme.ini 			          # Framework reference configuration<br/>
+├── README.md 			          # Project documentation<br/>
+└── requirements.txt 		      # Project dependencies<br/>
+
 
 <h4>Prerequisites</h4>
-&bull; Python 3.10 or above
-&bull; Firefox
-&bull; Allure Comandline
-&bull; Git
+&bull; Python 3.10 or above<br/>
+&bull; Firefox<br/>  
+&bull; Allure Comandline<br/>
+&bull; Git<br/>
 
 <h4>Verify</h4>
 ```
-python --version
-pip --version
+python --version<br/>
+pip --version<br/>
 allure --version
 ```
 <h4>Install Dependencies</h4>
-```
 pip install -r requirements.txt
 
 <h4>Project Description:</h4>
-Scope of project Saucedemo is to validate Login - Valid and Invalid Credentials. Validating Cart items. Functionality of "Add to Cart", "Remove". Checking the items in cart and checkout process of items and final checkout information.
+Scope of project Saucedemo is to validate Login - Valid and Invalid Credentials. Validating Cart items. Functionality of "Add to Cart", "Remove". Checking the items in cart and checkout process of items and final checkout information.<br/><br/>
 
-Sorting of items in different mode like "highest price to lowest price", "lowest price to highest", Alphabetical sort (Ascending or Descending).
+Sorting of items in different mode like "highest price to lowest price", "lowest price to highest", Alphabetical sort (Ascending or Descending).<br/><br/>
 
 Also, menu's are validated for "Reset App Stat", "Logout".
-
-
-
